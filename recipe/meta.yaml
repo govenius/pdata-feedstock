@@ -1,5 +1,5 @@
 {% set name = "pdata" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/govenius/pdata/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 96d550b1affe6494446f227c739e5ab8f10b06abab3c75b4e269b44eef8c94af
+  sha256: 62db61e3b7f711d1210f007d0fc0f526ecc9292bd6509bd35486ca74e8d009bc
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -23,6 +23,7 @@ requirements:
     - numpy
     - jsondiff
     - ipywidgets
+    - ipympl
     - matplotlib-base
     - pytz
     - requests
