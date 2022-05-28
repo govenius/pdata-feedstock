@@ -26,6 +26,7 @@ requirements:
     - ipympl
     - matplotlib-base
     - pytz
+    - python-dateutil
     - requests
     - ipykernel
     - ipython
