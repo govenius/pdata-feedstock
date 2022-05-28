@@ -30,6 +30,7 @@ requirements:
     - ipykernel
     - ipython
     - notebook
+    - uncertainties
 
 
 test:
