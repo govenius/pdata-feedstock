@@ -1,5 +1,5 @@
 {% set name = "pdata" %}
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/govenius/pdata/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 2d8fcaa62711da4f7711b91524eb40b285d3302eb32a70ebd3577235b86328fd
+  sha256: def2499c68f9adf9e90d603d5adc90702c0f39c297db4a2b37e91a7d360d9c18
 
 build:
   noarch: python
@@ -26,10 +26,12 @@ requirements:
     - ipympl
     - matplotlib-base
     - pytz
+    - python-dateutil
     - requests
     - ipykernel
     - ipython
     - notebook
+    - uncertainties
 
 
 test:
@@ -49,7 +51,7 @@ test:
 
 about:
   home: https://pdata.readthedocs.io/
-  summary: 'Simple-to-understand and robust data storage for experimental data'
+  summary: Simple-to-understand and robust data storage for experimental data
   description: |
     This procedural data storage package provides a self-contained interface focused
     exclusively on storing and reading experimental data, using an approach independent
